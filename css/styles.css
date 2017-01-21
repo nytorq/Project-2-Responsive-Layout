@@ -14,24 +14,25 @@ body {
 }
 
 p {
-	font-size: 3.4em;
-	margin-bottom:1.8em;
+	font-size: 1.25em;
 	text-align: center;
 	color: #585858;
+	margin-top: 0;
 }
 
 h1 {
 	text-transform: uppercase;
     display: block;
-    font-size: 5em;
     text-align: center;
+    margin: 2em 0;
 }
 
 h2 {
-	font-size: 4em;
+	font-size: 1.5em;
 	display: block;
     text-align: center;
     font-family: 'Cormorant', Serif;
+    margin-bottom: 0;
 }
 
 a {
@@ -40,9 +41,10 @@ a {
 }
 
 img {
-	width: 70%;
-	display: block;
-    margin: 100px auto;
+	width: 75%;
+    display: block;
+    margin: 25px auto;
+
 }
 
 /* ================================= 
@@ -52,12 +54,13 @@ img {
 /* ---- Top Navigation ---- */
 
 .name {
-    padding-bottom: 25px;
     border-bottom: 1px solid #757575;
+    font-size: 2em;
+    margin: 24px 0;
 }
 
 .top-nav {
-	font-size: 2.5em;
+	font-size: 1.25em;
 }
 .name,
 .top-nav {
@@ -68,10 +71,10 @@ img {
 
 
 .top-nav li {
-	padding: 40px 0;
+	padding: 10px 0;
     background-color: #fff;
     border: 1px #dedbdb solid;
-    margin: 17px 0;
+    margin: 5px 0;
 }
 
 .top-nav li:active {
@@ -82,7 +85,8 @@ img {
 
 footer {
 	background-color: #383636;
-    height: 200px;
+    height: 100px;
+    margin-top: 50px;
 }
 
 .row-title {
@@ -91,9 +95,9 @@ footer {
 
 .bottom-name,
 .back-to-top {
-	font-size: 2.5em;
+	font-size: 1em;
 	color: #fff;
-	margin-top: 65px;
+	margin-top: 38px;
 }
 
 .back-to-top {
