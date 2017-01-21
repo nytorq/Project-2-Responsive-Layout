@@ -4,14 +4,96 @@
 <head>
 	<title>Charlie's Responsive Layout Page</title>
 	<meta name="author" content="Charlie Prator">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant|PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-	<nav
+	<nav>
+		<div class="container clearfix">
+			<h1><a href="#" class="name">Charlie Prator</a></h1>
+			<ul class="top-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div> <!--/.container-->
+	</nav><!--/.container-->
+
+	<div class="container clearfix">
+
+		<img src="images/responsive-layout-profile.png" alt="A picture of Charlie Prator" class=""/>
+
+		<p>
+			Hello, I'm a front end developer and UX designer. I am learning about responsive design and CSS. I will finish a degree in front-end web development with Treehouse, and I'm excited to finally build stuff.
+		</p>
+
+		<h1 id="portfolio">Portfolio</h1>
+		<img src="images/portfolio-1.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Marketing Page</h2>
+		<p>
+			This project shows the front page of a marketing website meant for a specific business I'm interested in. 
+		</p>
+
+		<img src="images/portfolio-2.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Search Page</h2>
+		<p>
+			This page shows you search results based on words you enter into an input. 
+		</p>
+
+		<img src="images/portfolio-3.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Travel App</h2>
+		<p>
+			This project compares travel times based on different transportation methods and tells you the best one.
+		</p>
+
+		<img src="images/portfolio-4.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Map of Favorite Spots</h2>
+		<p>
+			This project uses mapping APIs to plot points for my faorite spots in the city for a do-it yourself walking tour.
+		</p>
+
+		<img src="images/portfolio-5.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Photo Gallery</h2>
+		<p>
+			This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+		</p>
+
+		<img src="images/portfolio-6.png" alt="A picture of one of my portfolio pieces." class=""/>
+		
+		<h2>Calculator</h2>
+		<p>
+			Someone can enter in the numbers they want, and press the big blue button and get the result.
+		</p>
+
+		<h1 id="contact">Contact</h1>
+		<p>
+			If you want to get in touch with me, feel free to give a call:
+		</p>
+
+		<p>
+			<span class="row-title">Phone:</span> <a href="tel:=19999999999">999-999-9999</a>
+		</p>
+
+		<p>
+			<span class="row-title">Email:</span> <a href="mailto:=19999999999">email@yoursite.com</a>
+		</p>
+
+	</div> <!--/.container-->
+
+	<footer>
+		<div class="container">
+			<a href="#" id="bottom-name">Charlie Prator</a>
+			<a href="#" id="back-to-top">Back to Top</a>
+		</div> <!--/.container-->
+	</footer>
 
 </body>
 
