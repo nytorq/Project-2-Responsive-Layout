@@ -93,19 +93,19 @@ footer {
     font-weight: bold;
 }
 
-.bottom-name,
-.back-to-top {
-	font-size: 1em;
-	color: #fff;
-	margin-top: 38px;
+.tablet-nav-items {
+	display:none;
 }
 
-.back-to-top {
-	float: right;
-}
 
 .bottom-name {
-	display: inline-block;
+	float: left;
+	color: #fff;
+}
+
+.bottom-name,
+.bottom-ul {
+	margin-top: 35px;
 }
 
 .row-title + a {
@@ -119,15 +119,97 @@ footer {
 	margin: 0 auto;
 }
 
-/* ---- Page Elements ---- */
+.bottom-ul {
+	float: right;
+}
 
+.bottom-ul li a{
+	color: #fff;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-.clearfix::after {
+@media (min-width: 767px) {
+
+/* ----Top Navigation---- */
+
+	.name {
+		padding-bottom: 12px;
+	}
+
+	.top-nav {
+		margin-bottom: 25px;
+	}
+
+	.top-nav li {
+	    padding: 10px 0;
+	    background-color: transparent;
+	    border: none;
+	    margin: 10px 30px;
+	    display: inline-block;
+	}
+
+	.clearfix::after {
 		content: " ";
 		display: table;
 		clear: both;
 	}
+
+/* ----Bottom Navigation---- */
+
+	.back-to-top {
+		display: none;
+	}
+
+	.bottom-ul li {
+		display: inline;
+	}
+
+	.tablet-nav-items {
+		display: inline;
+		padding: 5px 20px;
+	}
+
+/* ----Written Content---- */
+
+	.intro-content {
+		min-height: 200px;
+	}
+
+	.picture-blurb {
+		width: 45%;
+	    display: inline-block;
+	    margin: 0 16px;
+	    vertical-align: top;
+	}
+
+	p {
+		display: inline;
+	}
+
+	.intro {
+	    font-size: 1.33em;
+	    text-align: left;
+	    width: 60%;
+	}
+
+	.contact-info {
+		display: block;
+	}
+
+/* ----Images and Graphics---- */
+
+	img {
+		width: 100%;
+	}
+
+	.profile-pic {
+		width: 41%;
+    	float: right;
+    	margin: 10px;
+    		max-width: 256px;
+	}
+
+}
