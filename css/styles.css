@@ -117,6 +117,7 @@ footer {
 .container {
 	width: 90%;
 	margin: 0 auto;
+	max-width: 1024px;
 }
 
 .bottom-ul {
@@ -147,7 +148,7 @@ footer {
 	    padding: 10px 0;
 	    background-color: transparent;
 	    border: none;
-	    margin: 10px 30px;
+	    margin-left: 30px;
 	    display: inline-block;
 	}
 
@@ -210,6 +211,47 @@ footer {
     	float: right;
     	margin: 10px;
     		max-width: 256px;
+	}
+
+}
+
+@media (min-width: 1023px) {
+
+/* ----Top Navigation---- */
+
+	.name {
+		display: inline;
+    	border-bottom: none;
+    	float: left;
+    	margin: 20px 0 20px 0;
+    	font-size: 1.5em;
+    	padding-bottom: 0;
+	}
+
+	.top-nav {
+		display: inline;
+    	float: right;
+    	margin-bottom: 0;
+    	font-size: 1em;
+    	margin-top: 12px;
+	}
+
+	nav {
+		box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+    	margin-bottom: 50px;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+/* ----Written Content---- */
+
+	.picture-blurb {
+	    width: 31.93%;
+	    margin: 0 5px;
 	}
 
 }
