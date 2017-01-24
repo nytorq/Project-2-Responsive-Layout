@@ -53,10 +53,15 @@ img {
 
 /* ---- Top Navigation ---- */
 
+nav {
+	background-color: rgb(255, 106, 74);
+}
+
 .name {
     border-bottom: 1px solid #757575;
     font-size: 2em;
     margin: 24px 0;
+    color: #fff;
 }
 
 .top-nav {
@@ -79,6 +84,10 @@ img {
 
 .top-nav li:active {
 	background-color: #dedede;
+}
+
+.top-nav li a {
+	color: #fff;
 }
 
 /* ---- Bottom Navigation ---- */
@@ -126,6 +135,46 @@ footer {
 
 .bottom-ul li a{
 	color: #fff;
+}
+
+.testimonial-box {
+	border: 1px solid rgba(0, 0, 0, 0.02);
+    box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.08);
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+
+/* ---- Written Content ---- */
+
+.testimonial {
+	font-size: 1.5em;
+	font-family: 'Cormorant', Serif;
+	text-align: center;
+	position: relative;
+}
+
+.t-author {
+	font-size: .75em;
+	font-family: 'PT Sans', Arial, Sans-serif;
+	text-align: right;
+	display: block;
+	padding-top: 19px;
+}
+
+.quote-icon {
+	font-size: 5em;
+    color: #1effb8;
+    top: -19px;
+    left: -19px;
+    position: absolute;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.03);
+    border-radius: 100%;
+    line-height: 1.2;
 }
 
 /* ================================= 
@@ -180,7 +229,7 @@ footer {
 	}
 
 	.picture-blurb {
-		width: 45%;
+		width: 44.9%;
 	    display: inline-block;
 	    margin: 0 16px;
 	    vertical-align: top;
@@ -239,6 +288,12 @@ footer {
 	nav {
 		box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
     	margin-bottom: 50px;
+	}
+
+	.top-nav li a:hover,
+	.bottom-ul li a:hover {
+		transition: color 0.1s ease;
+		color: #1effb8;
 	}
 
 	.clearfix::after {
