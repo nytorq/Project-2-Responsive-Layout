@@ -53,15 +53,10 @@ img {
 
 /* ---- Top Navigation ---- */
 
-nav {
-	background-color: rgb(255, 106, 74);
-}
-
 .name {
     border-bottom: 1px solid #757575;
     font-size: 2em;
     margin: 24px 0;
-    color: #fff;
 }
 
 .top-nav {
@@ -86,9 +81,7 @@ nav {
 	background-color: #dedede;
 }
 
-.top-nav li a {
-	color: #fff;
-}
+
 
 /* ---- Bottom Navigation ---- */
 
@@ -137,22 +130,22 @@ footer {
 	color: #fff;
 }
 
-.testimonial-box {
-	border: 1px solid rgba(0, 0, 0, 0.02);
-    box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.08);
-    width: 50%;
-    margin: 0 auto;
-    padding: 50px;
-    position: relative;
-}
-
 /* ---- Written Content ---- */
 
 .testimonial {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-family: 'Cormorant', Serif;
-	text-align: center;
+	text-align: left;
 	position: relative;
+}
+
+.testimonial-box {
+	border: 1px solid rgba(0, 0, 0, 0.02);
+    box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
 }
 
 .t-author {
@@ -160,21 +153,21 @@ footer {
 	font-family: 'PT Sans', Arial, Sans-serif;
 	text-align: right;
 	display: block;
-	padding-top: 19px;
+	-webkit-margin-after: 0;
 }
 
-.quote-icon {
-	font-size: 5em;
-    color: #1effb8;
-    top: -19px;
-    left: -19px;
-    position: absolute;
-    background-color: white;
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgba(0, 0, 0, 0.03);
-    border-radius: 100%;
-    line-height: 1.2;
+.quote-bkgrnd {
+	display: none;
+}
+
+/* ---- Images & Graphics ---- */
+
+.profile-pic {
+	background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.25);
 }
 
 /* ================================= 
@@ -239,14 +232,42 @@ footer {
 		display: inline;
 	}
 
-	.intro {
-	    font-size: 1.33em;
-	    text-align: left;
-	    width: 60%;
-	}
 
 	.contact-info {
 		display: block;
+	}
+
+	.testimonial {
+		font-size: 1.5em;
+	}
+
+	.quote-bkgrnd {
+		display: inherit;
+	    color: #4a82ff;
+	    top: -19px;
+	    left: -19px;
+	    position: absolute;
+	    background-color: white;
+	    width: 45px;
+	    height: 45px;
+	    border: 2px solid rgba(0, 0, 0, 0.05);
+	    border-radius: 100%;
+	}
+
+	.material-icons {
+		top: 10px;
+    	left: 8px;
+    	position: absolute;
+	}
+
+	.intro {
+		position: absolute;
+	    font-size: 1.33em;
+	    text-align: left;
+	    width: 80%;
+	    color: #fff;
+	    top: 64%;
+	    left: 10%;
 	}
 
 /* ----Images and Graphics---- */
@@ -256,10 +277,15 @@ footer {
 	}
 
 	.profile-pic {
-		width: 41%;
-    	float: right;
-    	margin: 10px;
-    		max-width: 256px;
+		position: relative;
+	    width: 100%;
+	    float: none;
+	    margin: inherit;
+	    max-width: inherit;
+	}
+
+	.hero-blurb {
+		position: relative;
 	}
 
 }
@@ -268,6 +294,14 @@ footer {
 
 /* ----Top Navigation---- */
 
+	nav {
+	background-color: #4a82ff;
+	}
+
+	.top-nav li a {
+	color: #fff;
+	}
+
 	.name {
 		display: inline;
     	border-bottom: none;
@@ -275,6 +309,7 @@ footer {
     	margin: 20px 0 20px 0;
     	font-size: 1.5em;
     	padding-bottom: 0;
+    	color: #fff;
 	}
 
 	.top-nav {
@@ -287,7 +322,6 @@ footer {
 
 	nav {
 		box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
-    	margin-bottom: 50px;
 	}
 
 	.top-nav li a:hover,
@@ -307,6 +341,47 @@ footer {
 	.picture-blurb {
 	    width: 31.93%;
 	    margin: 0 5px;
+	}
+
+	.testimonial-box {
+		border: 1px solid rgba(0, 0, 0, 0.02);
+	    box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.08);
+	    width: 50%;
+	    margin: 0 auto;
+	    padding: 50px;
+	    position: relative;
+	}
+
+	.t-author {
+		padding-top: 19px;
+	}
+
+	.intro {
+		font-size: 1.75em;
+		top: 61%;
+    	left: 10%;
+	}
+
+	.intro-section {
+		background: no-repeat  url("../images/profile-pic-desktop-@1x.jpg");
+		background-size: cover;
+	}
+
+	.hero-blurb picture {
+		visibility: hidden;
+	}
+
+}
+
+@media (min-width: 1039px) {
+
+	.intro-section {
+		background: no-repeat  url("../images/profile-pic-wide-@1x.jpg");
+		background-size: cover;
+	}
+
+	.intro {
+		text-shadow: 1px 2px 0px #000;
 	}
 
 }

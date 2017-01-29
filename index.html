@@ -5,6 +5,7 @@
 	<title>Charlie's Responsive Layout Page</title>
 	<meta name="author" content="Charlie Prator">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant%7CPT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,58 +22,78 @@
 		</div> <!--/.container-->
 	</nav>
 
-	<div class="container clearfix">
-		<div class="intro-content">
-			<img src="images/responsive-layout-profile.png" alt="A picture of Charlie Prator" class="profile-pic"/>
-			<p class="intro">
-				Hello, I'm a front end developer and UX designer. I am learning about responsive design and CSS. I will finish a degree in front-end web development with Treehouse, and I'm excited to finally build stuff.
-			</p>
-		</div><!--.intro-content-->
+	<div class="intro-section">
+
+		<div class="container clearfix">
+
+			<div class="hero-blurb">
+				<picture>
+					<source media="(min-width: 768px)"
+							srcset="images/profile-pic-tablet-@1x.jpg 768w,
+									images/profile-pic-tablet-@2x.jpg 1536w,
+									images/profile-pic-desktop-@1x.jpg 1024w,
+									images/profile-pic-desktop-@2x.jpg 2047w"/>
+					<source	srcset="images/profile-pic-mobile-@1x.jpg 288w,
+								images/profile-pic-mobile-@2x.jpg 576w"/>
+					<img 	class="profile-pic"
+						 	src="images/profile-pic-mobile-@1x.jpg"
+						 	alt="A picture of me, Charlie Prator."/>
+				</picture>
+				<p class="intro">Hello, I'm a front end developer and UX designer. I am learning about responsive design and CSS. I will finish a degree in front-end web development with Treehouse, and I'm excited to finally build stuff.</p><!--/.blurb-->
+			</div>
+
+		</div><!--/.container-->
+
+	</div><!--/.intro-section-->
 
 		<h1 id="portfolio">Portfolio</h1>
 		
-		<div class="picture-blurb">
-			<img src="images/portfolio-1.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Marketing Page</h2>
-			<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-		</div><!--/picture-blub-->
+		<div class="container clearfix">
 
-		<div class="picture-blurb">
-			<img src="images/portfolio-2.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Search Page</h2>
-			<p>This page shows you search results based on words you enter into an input.</p>
-		</div><!--/picture-blub-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-1.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Marketing Page</h2>
+				<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+			</div><!--/picture-blub-->
 
-		<div class="picture-blurb">
-			<img src="images/portfolio-3.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Travel App</h2>
-			<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-		</div><!--/picture-blub-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-2.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Search Page</h2>
+				<p>This page shows you search results based on words you enter into an input.</p>
+			</div><!--/picture-blub-->
 
-		<div class="picture-blurb">
-			<img src="images/portfolio-4.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Map of Favorite Spots</h2>
-			<p>This project uses mapping APIs to plot points for my faorite spots in the city for a do-it yourself walking tour.</p>
-		</div><!--/picture-blub-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-3.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Travel App</h2>
+				<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+			</div><!--/picture-blub-->
 
-		<div class="picture-blurb">
-			<img src="images/portfolio-5.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Photo Gallery</h2>
-			<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-		</div><!--/picture-blub-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-4.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Map of Favorite Spots</h2>
+				<p>This project uses mapping APIs to plot points for my faorite spots in the city for a do-it yourself walking tour.</p>
+			</div><!--/picture-blub-->
 
-		<div class="picture-blurb">
-			<img src="images/portfolio-6.png" alt="A picture of one of my portfolio pieces." class=""/>
-			<h2>Calculator</h2>
-			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-		</div><!--/picture-blub-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-5.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Photo Gallery</h2>
+				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+			</div><!--/picture-blub-->
 
-		<h1 id="contact">Testimonials</h1>
-		<div class="testimonial-box">
-			<p class="testimonial">&quot;Charlie did a great job designing my site. If it came down to it, I'd entrust him with the life of my firstborn.&quot;<p>
-			<p class="t-author">John C. Reilly<p>
-			<p class="quote-icon">&quot;</p>
-		</div><!--.testimonial-box-->
+			<div class="picture-blurb">
+				<img src="images/portfolio-6.png" alt="A picture of one of my portfolio pieces." class=""/>
+				<h2>Calculator</h2>
+				<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+			</div><!--/picture-blub-->
+
+	 		<h1 id="contact">Testimonials</h1>
+			<div class="testimonial-box">
+				<p class="testimonial">&quot;Charlie did a great job designing my site. If it came down to it, I'd entrust him with the life of my firstborn.&quot;</p>
+				<p class="t-author">John C. Reilly</p>
+				<span class="quote-bkgrnd"><i class="material-icons">format_quote</i></span>
+			</div><!--.testimonial-box-->
+
+		</div><!--/.container-->
 
 		<h1 id="contact">Contact</h1>
 		<p class="contact-info">
