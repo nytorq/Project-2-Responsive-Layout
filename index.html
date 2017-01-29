@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
 <body>
 
@@ -28,13 +29,16 @@
 
 			<div class="hero-blurb">
 				<picture>
-					<source media="(min-width: 768px)"
+					<source 
+							sizes="(min-width: 768px) and (max-width: 1023px) 90vw"
+							media="(min-width: 768px)"
 							srcset="images/profile-pic-tablet-@1x.jpg 768w,
 									images/profile-pic-tablet-@2x.jpg 1536w,
 									images/profile-pic-desktop-@1x.jpg 1024w,
 									images/profile-pic-desktop-@2x.jpg 2047w"/>
 					<source	srcset="images/profile-pic-mobile-@1x.jpg 288w,
-								images/profile-pic-mobile-@2x.jpg 576w"/>
+								images/profile-pic-mobile-@2x.jpg 576w"
+							sizes="(max-width: 767px) 68vw">
 					<img 	class="profile-pic"
 						 	src="images/profile-pic-mobile-@1x.jpg"
 						 	alt="A picture of me, Charlie Prator."/>
@@ -86,14 +90,14 @@
 				<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 			</div><!--/picture-blub-->
 
-	 		<h1 id="contact">Testimonials</h1>
+	 		<h1 id="Testimonials">Testimonials</h1>
 			<div class="testimonial-box">
 				<p class="testimonial">&quot;Charlie did a great job designing my site. If it came down to it, I'd entrust him with the life of my firstborn.&quot;</p>
 				<p class="t-author">John C. Reilly</p>
 				<span class="quote-bkgrnd"><i class="material-icons">format_quote</i></span>
 			</div><!--.testimonial-box-->
 
-		</div><!--/.container-->
+		
 
 		<h1 id="contact">Contact</h1>
 		<p class="contact-info">
@@ -107,9 +111,7 @@
 		<p class="contact-info">
 			<span class="row-title">Email:</span> <a href="mailto:=19999999999">email@yoursite.com</a>
 		</p>
-
-	</div> <!--/.container-->
-
+	</div><!--/.container-->
 	<footer>
 		<div class="container">
 			<a href="#" class="bottom-name">Charlie Prator</a>
